@@ -1,38 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .App {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color:  rgb(193, 232, 254);
+  font-size: 50px;
+  background-color: #5f5f5f;
+  padding: 20px;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search {
+  width: 100%;
+  padding: 12px 24px;
+  background-color: transparent;
+  font-size: 20px;
+  line-height: 18px;
+  color: #2b2b2b;
+  background-color: transparent;
+  margin-left: 0px;
+  box-shadow: inset 0px 0px 0px 4px  rgb(193, 232, 254);
+  border-radius: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.icon {
+  width: 32px;
+  margin-right: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2 {
+  /*color: rgb(207, 71, 94);*/
+  color: rgb(245, 241, 138);
+  font-size: 35px;
+}
+
+.list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1, h2, ul, p {
+  font-family: 'Open Sans', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ul {
+  list-style: none; 
+  padding: 0;
+}
+
+li {
+  display: block;
+  padding: .4em .4em .4em .8em;
+  margin: 0 .5em 2em;
+  background: #7a7a7a;
+  width: 400px;
+  border-radius: 20px;
+  color: rgb(193, 232, 254);
+  font-size: 20px;
+}
+
+button {
+  border: none;
+  background-color: #dbecc4;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.style-img {
+  width: 500px;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #DCDDE1;
+  border: 7px solid #767578;
+}
+
+.par {
+  color:  rgb(193, 232, 254);
+  font-size: 25px;
+  font-weight: bold;
+}
+
+@media all and (max-width: 500px) {
+  .style-img {
+    width: 50%;
   }
-  to {
-    transform: rotate(360deg);
+  
+  li {
+    padding: .4em .4em .4em .8em;
+    margin: 0 .5em 2em;
+    background: #7a7a7a;
+    width: 300px;
+    border-radius: 20px;
+    color: rgb(193, 232, 254);
+    font-size: 20px;
+  }
+  
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .par {
+    font-size: 20px;
   }
 }
